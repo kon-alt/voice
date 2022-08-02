@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="49" height="51.5">
+    <defs>
+        <filter id="Rectangle_4" x="0" y="0" width="49" height="51.5" filterUnits="userSpaceOnUse">
+            <feOffset dy="4"/>
+            <feGaussianBlur stdDeviation=".5" result="blur"/>
+            <feFlood flood-color="#272727" flood-opacity=".161"/>
+            <feComposite operator="in" in2="blur"/>
+        </filter>
+        <filter id="Rectangle_4-2" x="0" y="0" width="49" height="51.5" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation=".5" result="blur-2"/>
+            <feFlood flood-opacity=".161" result="color"/>
+            <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+            <feComposite operator="in" in="color"/>
+            <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+        <filter id="Path_2425" x="17.8" y="16" width="15.08" height="15" filterUnits="userSpaceOnUse">
+            <feOffset dx="1" dy="1"/>
+            <feGaussianBlur result="blur-3"/>
+            <feFlood flood-opacity=".243"/>
+            <feComposite operator="in" in2="blur-3"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <radialGradient id="radial-gradient" cx=".5" cy=".5" r=".5" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#c3992d"/>
+            <stop offset=".03" stop-color="#d5a62d"/>
+            <stop offset=".133" stop-color="#b38c28"/>
+            <stop offset=".167" stop-color="#a37f20"/>
+            <stop offset=".222" stop-color="#b9912c"/>
+            <stop offset=".35" stop-color="#b68e29"/>
+            <stop offset=".394" stop-color="#d6b152"/>
+            <stop offset=".438" stop-color="#b8902a"/>
+            <stop offset=".586" stop-color="#b28b28"/>
+            <stop offset=".65" stop-color="#c39e41"/>
+            <stop offset=".709" stop-color="#b38c28"/>
+            <stop offset="1" stop-color="#d3a52f"/>
+        </radialGradient>
+        <style>
+            .cls-3{fill:#fff}.cls-6{fill:none}.cls-5{stroke:none}
+        </style>
+    </defs>
+    <g id="User_Icon" data-name="User Icon">
+        <g data-type="innerShadowGroup" transform="translate(-1771.766 -24)">
+            <g transform="translate(1771.77 24)" style="filter:url(#Rectangle_4)">
+                <g id="Rectangle_4-3" data-name="Rectangle 4" transform="translate(1.5)" style="fill:url(#radial-gradient);stroke:#ffcd43;stroke-width:3px">
+                    <rect class="cls-5" width="46" height="46" rx="23"/>
+                    <rect class="cls-6" x="1.5" y="1.5" width="43" height="43" rx="21.5"/>
+                </g>
+            </g>
+            <rect id="Rectangle_4-4" data-name="Rectangle 4" width="46" height="46" rx="23" transform="translate(1773.266 24)" style="fill:url(#radial-gradient)"/>
+            <g transform="translate(1771.77 24)" style="filter:url(#Rectangle_4-2)">
+                <rect id="Rectangle_4-5" data-name="Rectangle 4" class="cls-3" width="46" height="46" rx="23" transform="translate(1.5)"/>
+            </g>
+            <g id="Rectangle_4-6" data-name="Rectangle 4" transform="translate(1773.266 24)" style="fill:none;stroke:#ffcd43;stroke-width:3px">
+                <rect class="cls-5" width="46" height="46" rx="23"/>
+                <rect class="cls-6" x="1.5" y="1.5" width="43" height="43" rx="21.5"/>
+            </g>
+        </g>
+        <g transform="translate(.004)" style="filter:url(#Path_2425)">
+            <path id="Path_2425-2" data-name="Path 2425" class="cls-3" d="M.84-4.58c3.74 0 6.08-1.58 6.08-4.7C6.92-12.42 4.58-14 .84-14h-6.06v10.54h-1.94v1.66h1.94V0h3.26v-1.8h4.32v-1.66h-4.32v-1.12zm2.8-4.68c0 1.38-1.02 2.14-2.82 2.14h-2.78v-4.24H.82c1.8 0 2.82.74 2.82 2.1z" transform="translate(24.96 30)"/>
+        </g>
+    </g>
+</svg>

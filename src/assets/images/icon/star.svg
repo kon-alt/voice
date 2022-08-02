@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.781" height="25.442">
+    <defs>
+        <filter id="a">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feFlood flood-opacity=".686" result="color"/>
+            <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+            <feComposite operator="in" in="color"/>
+            <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-type="innerShadowGroup">
+        <path data-name="Subtraction 2" d="M-3424.862-1724.146a1 1 0 0 1 1.808 0l3.251 6.881a1 1 0 0 0 .78.565l7.577.947a1 1 0 0 1 .558 1.724l-5.562 5.187a1 1 0 0 0-.3.92l1.435 7.453a1 1 0 0 1-1.462 1.066l-6.7-3.668a1 1 0 0 0-.96 0l-6.7 3.668a1 1 0 0 1-1.462-1.066l1.435-7.453a1 1 0 0 0-.3-.92l-5.562-5.187a1 1 0 0 1 .558-1.724l7.577-.947a1 1 0 0 0 .78-.565z" transform="translate(3437.348 1724.719)" style="fill:#dec03f"/>
+        <g style="filter:url(#a)">
+            <path data-name="Subtraction 2" d="M-3424.862-1724.146a1 1 0 0 1 1.808 0l3.251 6.881a1 1 0 0 0 .78.565l7.577.947a1 1 0 0 1 .558 1.724l-5.562 5.187a1 1 0 0 0-.3.92l1.435 7.453a1 1 0 0 1-1.462 1.066l-6.7-3.668a1 1 0 0 0-.96 0l-6.7 3.668a1 1 0 0 1-1.462-1.066l1.435-7.453a1 1 0 0 0-.3-.92l-5.562-5.187a1 1 0 0 1 .558-1.724l7.577-.947a1 1 0 0 0 .78-.565z" transform="translate(3437.35 1724.72)" style="fill:#fff"/>
+        </g>
+    </g>
+</svg>

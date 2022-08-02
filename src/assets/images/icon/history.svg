@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.608" height="21.608">
+    <defs>
+        <filter id="a">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feFlood flood-opacity=".686" result="color"/>
+            <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+            <feComposite operator="in" in="color"/>
+            <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g data-type="innerShadowGroup">
+        <path data-name="Path 2427" d="M946.239 603.413a15.588 15.588 0 0 1 7.13 0 9.154 9.154 0 0 1 6.826 6.826 15.585 15.585 0 0 1 0 7.13 9.154 9.154 0 0 1-6.826 6.826 15.588 15.588 0 0 1-7.13 0 9.154 9.154 0 0 1-6.826-6.826 15.588 15.588 0 0 1 0-7.13 9.154 9.154 0 0 1 6.826-6.826zm4.254 6.943a.689.689 0 1 0-1.378 0v5.744a.689.689 0 1 0 1.378 0zm-3.448 2.3a.689.689 0 1 0-1.378 0v4.6a.689.689 0 0 0 1.378 0zm6.9 1.149a.69.69 0 0 0-1.379 0v3.448a.69.69 0 0 0 1.379 0z" transform="translate(-939 -603)" style="fill-rule:evenodd;fill:#6660ff"/>
+        <g style="filter:url(#a)">
+            <path data-name="Path 2427" d="M946.239 603.413a15.588 15.588 0 0 1 7.13 0 9.154 9.154 0 0 1 6.826 6.826 15.585 15.585 0 0 1 0 7.13 9.154 9.154 0 0 1-6.826 6.826 15.588 15.588 0 0 1-7.13 0 9.154 9.154 0 0 1-6.826-6.826 15.588 15.588 0 0 1 0-7.13 9.154 9.154 0 0 1 6.826-6.826zm4.254 6.943a.689.689 0 1 0-1.378 0v5.744a.689.689 0 1 0 1.378 0zm-3.448 2.3a.689.689 0 1 0-1.378 0v4.6a.689.689 0 0 0 1.378 0zm6.9 1.149a.69.69 0 0 0-1.379 0v3.448a.69.69 0 0 0 1.379 0z" transform="translate(-939 -603)" style="fill:#fff;fill-rule:evenodd"/>
+        </g>
+    </g>
+</svg>

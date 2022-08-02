@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54">
+    <defs>
+        <filter id="Rectangle_72" x="0" y="0" width="54" height="54" filterUnits="userSpaceOnUse">
+            <feOffset dy="2"/>
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-2{fill:#dec03f}
+        </style>
+    </defs>
+    <g id="Neitral" transform="translate(-234.5 -1.08)">
+        <g transform="translate(234.5 1.08)" style="filter:url(#Rectangle_72)">
+            <g id="Rectangle_72-2" data-name="Rectangle 72" transform="translate(7.5 5.5)" style="fill:#2c3843;stroke:rgba(255,255,255,.06)">
+                <rect width="39" height="39" rx="19.5" style="stroke:none"/>
+                <rect x=".5" y=".5" width="38" height="38" rx="19" style="fill:none"/>
+            </g>
+        </g>
+        <path id="Subtraction_1" data-name="Subtraction 1" class="cls-2" d="M-3429.4-1723.5a1 1 0 0 1 1.809 0l1.711 3.628a1 1 0 0 0 .78.566l3.986.5a1 1 0 0 1 .558 1.723l-2.925 2.733a1 1 0 0 0-.3.919l.755 3.927a1 1 0 0 1-1.463 1.066l-3.526-1.934a1 1 0 0 0-.962 0l-3.526 1.934a1 1 0 0 1-1.463-1.066l.755-3.927a1 1 0 0 0-.3-.919l-2.925-2.733a1 1 0 0 1 .558-1.723l3.986-.5a1 1 0 0 0 .78-.566z" transform="translate(3688 1740.5)"/>
+        <g id="Group_56" data-name="Group 56" transform="translate(-456 -347.42)">
+            <rect id="Rectangle_74" data-name="Rectangle 74" class="cls-2" width="8" height="2" rx="1" transform="translate(724 380)"/>
+            <rect id="Rectangle_75" data-name="Rectangle 75" class="cls-2" width="8" height="2" rx="1" transform="rotate(90 176 553)"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,1047 @@
+.playerCreater{
+    width: 100%;
+    height: auto;
+    min-height: 90vh;
+    float: left;
+    background-color: #2b333c;
+    padding: 30px 0 60px;
+}
+.playerCreater_center{
+    width: 90%;
+    max-width: 1520px;
+    height: auto;
+    margin: 0 auto;
+}
+.playerCreater-text{
+    width: 100%;
+    height: auto;
+    float: left;
+    font-size: 16px;
+    font-family: 'Avenir Next Cyr Medium';
+    text-align: left;
+    color: #a5b3c6;
+    text-transform: uppercase;
+}
+.playerCreater-title{
+    width: 100%;
+    height: auto;
+    float: left;
+    font-size: 32px;
+    line-height: 1.38;
+    font-family: 'Avenir Next Cyr Demi';
+    text-align: left;
+    color: #ecf0f5;
+}
+.playerCreater_row{
+    width: 100%;
+    height: auto;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 43px 0 80px 0;
+}
+.playerCreater_item:nth-child(1){
+    width: 40%;
+    height: auto;
+}
+.playerCreater_item:nth-child(2){
+    width: 50%;
+    height: auto;
+}
+.playerCreater_item-sectionTitle{
+    width: 100%;
+    height: auto;
+    float: left;
+    font-size: 16px;
+    font-family: 'Avenir Next Cyr Medium';
+    text-align: left;
+    color: #858c93;
+    padding: 0 0 7px;
+    border-bottom: 1px solid #858c93;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+.playerCreater_item-form{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+.playerCreater_item-form-label{
+    width: 100%;
+    height: auto;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 27px 0 0 0;
+    position: relative;
+}
+.playerCreater_item-form-box{
+    width: 92%;
+    height: auto;
+    position: relative;
+}
+.playerCreater_item-form-box::before{
+    content: "";
+    width: 15px;
+    height: 10px;
+    background-image: url(../../assets/images/icon/nocheck.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 23px;
+    right: 23px;
+    transform: 0.4s;
+}
+.playerCreater_item-form-box.active::before{
+    background-image: url(../../assets/images/icon/check.svg);
+    transform: 0.4s;
+}
+.playerCreater_item-form-box span{
+    width: 100%;
+    height: auto;
+    float: left;
+    font-size: 14px;
+    font-family: 'Avenir Next Cyr Medium';
+    text-align: left;
+    color: #a5b3c6;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+.playerCreater_item-form-box span > img{
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    object-position: center;
+    margin: 0 9px 0 20px;
+}
+.playerCreater_item-form-box input{
+    width: 100%;
+    height: auto;
+    float: left;
+    padding: 19px 50.5px 18px 27px;
+    object-fit: contain;
+    border-radius: 14px;
+    box-sizing: border-box;
+    background-color: #363d46;
+    margin: 15px 0 0 0;
+    border: unset;
+    font-size: 15px;
+    color: #fff;
+}
+.playerCreater_item-select{
+    width: 100%;
+    height: auto;
+    float: left;
+    position: relative;
+}
+.playerCreater_item-select input{
+    width: 100%;
+    height: auto;
+    float: left;
+    padding: 19px 51.5px 18px 27px;
+    object-fit: contain;
+    border-radius: 14px;
+    background-color: #363d46;
+    border: unset;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.playerCreater_item-select-icon{
+    width: 12.8px;
+    height: 6.4px;
+    object-position: center;
+    object-fit: contain;
+    position: absolute;
+    right: 24px;
+    top: 40px;
+    transition: .4s;
+}
+.playerCreater_item-select.active .playerCreater_item-select-icon{
+    transform: rotate(-180deg);
+    transition: .4s;
+}
+.playerCreater_item-sectionDropdown{
+    width: 100%;
+    height: auto;
+    float: left;
+    padding: 15px 31.5px 18px 27px;
+    object-fit: contain;
+    border-radius: 0 0 14px 14px;
+    box-sizing: border-box;
+    background-color: #363d46;
+    margin: 58px 0 0 0;
+    position: absolute;
+    z-index: 1000;
+    display: block;
+}
+.playerCreater_item-select.active .playerCreater_item-sectionDropdown{
+    display: block;
+}
+.playerCreater_item-sectionDropdown p{
+    width: 100%;
+    height: auto;
+    float: left;
+    color: #a5b3c6;
+    font-size: 14px;
+    padding: 7px 0;
+    cursor: pointer;
+    transition: .3s;
+}
+.playerCreater_item-sectionDropdown p.active{
+    color: #fff;
+}
+.playerCreater_item-sectionDropdown p:hover{
+    color: #fff;
+    transition: .3s;
+}
+.playerCreater_item-text{
+    width: 17px;
+    height: 17px;
+    background-image: url('../../assets/images/icon/question.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 54px;
+    right: 0;
+    cursor: pointer;
+}
+.playerCreater_item-text span{
+    width: 135px;
+    height: auto;
+    padding: 12px;
+    font-size: 11px;
+    font-family: 'Avenir Next Cyr Medium';
+    color: #363d46;
+    float: left;
+    position: relative;
+    left: -59px;
+    top: 31px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: none;
+    z-index: 1006;
+}
+.playerCreater_item-text:hover span{
+    display: block;
+}
+.playerCreater_item-text span:before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    top: -6px;
+    left: 61px;
+    transform: rotate(45deg);
+    border-left: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+}
+.playerCreater_box{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 60px 0 0 0;
+}
+.playerCreater_box svg path, svg rect {
+    fill: inherit;
+}
+.playerCreater_box-title{
+    width: 100%;
+    height: auto;
+    float: left;
+    font-size: 14px;
+    font-family: 'Avenir Next Cyr Medium';
+    text-align: left;
+    color: #a5b3c6;
+    text-transform: uppercase;
+}
+.playerCreater_box-player{
+    width: -webkit-fill-available;
+    width: -moz-available;
+    height: auto;
+    padding: 15px;
+    float: left;
+    border-radius: 17px;
+    border: solid 1px #e5e5e5;
+    background-color: #fff;
+}
+.playerCreater_box-player audio {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    float: left;
+}
+.playerCreater_box-player audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
+    margin: 0;
+}
+.playerCreater_box-player audio::-webkit-media-controls-play-button, .playerCreater_box-player audio::-webkit-media-controls-panel {
+    background-color: #fff;
+    color: #363d46;
+}
+.playerCreater_box-type{
+    width: -fit-content;
+    height: auto;
+    float: left;
+    margin: 16px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+.playerCreater_box-type a{
+    padding: 10px 28px;
+    font-family: 'Avenir Next Cyr Bold';
+    font-size: 14px;
+    color: #a5b3c6;
+    border-radius: 4px;
+    background-color: #363d46;
+    border: 1px solid #363d46;
+    margin: 0 18px 10px 0;
+    transition: .3s;
+}
+.playerCreater_box-type a.active{
+    color: #fff;
+    border-color: #fff;
+    transition: .3s;
+}
+.playerCreater_box-color{
+    width: -fit-content;
+    height: auto;
+    float: left;
+    margin: 16px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    align-content: center;
+}
+.playerCreater_box-color input{
+    max-width: 40px;
+    height: auto;
+    padding: 13px 18px;
+    font-size: 14px;
+    font-family: 'Avenir Next Cyr Bold';
+    border-radius: 4px;
+    margin: 0 13px 0 0;
+    border: unset;
+    text-align: center;
+}
+.playerCreater_box-color p{
+    font-size: 14px;
+    font-family: 'Avenir Next Cyr Medium';
+    color: #a5b3c6;
+    float: left;
+    margin: 0 28px 20px 0;
+    display: flex;
+    align-items: center;
+}
+.playerCreater_box-settings{
+    width: -fit-content;
+    height: auto;
+    float: left;
+    margin: 16px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+.playerCreater_box-settings input{
+    max-width: 40px;
+    height: auto;
+    padding: 13px 18px;
+    font-size: 14px;
+    font-family: 'Avenir Next Cyr Bold';
+    color: #a5b3c6;
+    border-radius: 4px;
+    background-color: #363d46;
+    margin: 0 13px 0 0;
+    border: unset;
+    text-align: center;
+}
+.playerCreater_box-settings p{
+    font-size: 14px;
+    font-family: 'Avenir Next Cyr Medium';
+    color: #a5b3c6;
+    float: left;
+    margin: 0 28px 10px 0;
+}
+.playerCreater-generate{
+    font-size: 16px;
+    font-family: 'Avenir Next Cyr Demi';
+    color: #fff;
+    padding: 20px 70px 22px;
+    border-radius: 20px;
+    background-color: #2b3a4b;
+    margin: 10px auto;
+    display: table;
+    cursor: pointer;
+    border: none;
+}
+.playerCreater-generate:disabled {
+    opacity: 0.4;
+}
+/* */
+.playerHistory{
+    width: 100%;
+    height: auto;
+    min-height: 90vh;
+    float: left;
+    background-color: #2b333c;
+    padding: 30px 0 60px;
+}
+.playerHistory_center{
+    width: 90%;
+    max-width: 1520px;
+    height: auto;
+    margin: 0 auto;
+}
+.playerHistory-text{
+    width: 100%;
+    height: auto;
+    float: left;
+    font-size: 16px;
+    font-family: 'Avenir Next Cyr Medium';
+    text-align: left;
+    color: #a5b3c6;
+    text-transform: uppercase;
+}
+.playerHistory-title{
+    width: 100%;
+    height: auto;
+    float: left;
+    font-size: 32px;
+    line-height: 1.38;
+    font-family: 'Avenir Next Cyr Demi';
+    text-align: left;
+    color: #ecf0f5;
+}
+.playerHistory_row{
+    width: 100%;
+    height: auto;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 43px 0 80px 0;
+}
+.playerHistory_item:nth-child(2){
+    width: 40%;
+    height: auto;
+}
+.playerHistory_item:nth-child(1){
+    width: 50%;
+    height: auto;
+}
+.playerHistory_item-sectionTitle{
+    width: 100%;
+    height: auto;
+    float: left;
+    font-size: 16px;
+    font-family: 'Avenir Next Cyr Medium';
+    text-align: left;
+    color: #858c93;
+    padding: 0 0 7px;
+    border-bottom: 1px solid #516071;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+.playerHistory_box{
+    width: 100%;
+    height: auto;
+    float: left;
+    border-radius: 17px;
+    background-color: #2e3c4d;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 25px 0 0 0;
+    padding: 20px;
+    flex-direction: row;
+    align-content: center;
+    box-sizing: border-box;
+    transition: .3s;
+}
+.playerHistory_box:hover{
+    background-color: #314052;
+    transition: .3s;
+}
+.playerHistory_block{
+    padding: 0 25px 0 5px;
+    border-right: 1px solid #516071;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: unset;
+    align-items: center;
+    align-content: center;
+    flex-grow: 1;
+}
+.playerHistory_block img:hover {
+    cursor: pointer;
+}
+.playerHistory_block:nth-child(1){
+    min-width: 125px;
+    padding: 0 15px 0 0;
+}
+.playerHistory_block:nth-child(2){
+    min-width: 157px;
+    max-width: 157px;
+}
+.playerHistory_block:last-child{
+    border: unset;
+    padding: 0 15px 0 5px;
+}
+.playerHistory_block--button{
+    max-width: 50px;
+    padding: 0 10px;
+   justify-content: center;
+}
+.playerHistory_block-title{
+    font-size: 12px;
+    text-align: left;
+    color: #dee8f4;
+    padding: 5px 13px 6px 13px;
+    object-fit: contain;
+    border-radius: 14px;
+    background-color: #363d46;
+}
+.playerHistory_block-section{
+    width: 100%;
+    height: auto;
+    float: left;
+    font-size: 13px;
+    font-family: 'Avenir Next Cyr Medium';
+    text-align: left;
+    color: #939ba5;
+    float: left;
+}
+.playerHistory_block-in{
+    font-size: 12px;
+    font-family: 'Avenir Next Cyr Medium';
+    color: #629dde;
+    float: left;
+    margin: 3px 0 0 0;
+}
+.playerHistory_block-button{
+    padding: 6px 14px;
+    border-radius: 23px;
+    background-color: #4e9eff;
+    font-size: 12px;
+    font-family: 'Avenir Next Cyr Medium';
+    color: #fff;
+    margin: 15px 0;
+    float: left;
+}
+.playerHistory_plan{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 25px 0 0 0;
+}
+.playerHistory_plan-icon{
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    object-position: center;
+    float: left;
+}
+.playerHistory_plan-title{
+    width: 100%;
+    height: auto;
+    float: left;
+    font-size: 18px;
+    font-family: 'Avenir Next Cyr Demi';
+    text-align: left;
+    color: #d62555;
+    margin: 23px 0 0 0;
+    text-transform: uppercase;
+}
+.playerHistory_plan-description{
+    width: 100%;
+    height: auto;
+    float: left;
+    font-size: 18px;
+    text-align: left;
+    color: #a6b5c6;
+    margin: 10px 0 0 0;
+}
+.playerHistory_plan-button{
+    width: 220px;
+    float: left;
+    font-size: 16px;
+    font-family: 'Avenir Next Cyr Demi';
+    color: #3a4257;
+    margin: 40px 0 0 0;
+    padding: 14px 0 15px 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 1px 0 rgba(39, 39, 39, 0.16);
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    background-image: linear-gradient(to bottom, #fff, #efefef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    transition: .3s;
+}
+.playerHistory_plan-button img{
+    width: 17.9px;
+    height: 17.8px;
+    object-position: center;
+    object-fit: contain;
+    margin: 0 0 0 0;
+    transition: .3s;
+    position: absolute;
+    right: 37px;
+    opacity: 0;
+}
+.playerHistory_plan-button:hover{
+    padding: 14px 28px 15px 0;
+    transition: .3s;
+}
+.playerHistory_plan-button:hover img{
+    opacity: 1;
+    transition: .3s;
+}
+.playerHistory_block-remove img{
+    width: 18px;
+    height: 18px;
+    object-position: center;
+    object-fit: contain;
+}
+.playerHistory_tarif{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 25px 0 0 0;
+}
+.playerHistory_tarif-icon{
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    object-position: center;
+    float: left;
+    margin: 0 7px 0 0;
+}
+.playerHistory_tarif-title{
+    width: 100%;
+    height: auto;
+    float: left;
+    font-size: 24px;
+    font-family: 'Avenir Next Cyr Demi';
+    text-align: left;
+    color: #fff;
+    margin: 21px 0 0 0;
+}
+.playerHistory_tarif-text{
+    width: 100%;
+    height: auto;
+    float: left;
+    font-size: 16px;
+    font-family: 'Avenir Next Cyr Medium';
+    text-align: left;
+    color: #8c9daf;
+    margin: 3px 0 0 0;
+}
+.playerHistory_tarif-list{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 10px 0 0;
+}
+.playerHistory_tarif-list li{
+    width: 100%;
+    height: auto;
+    float: left;
+    font-size: 16px;
+    font-family: 'Avenir Next Cyr Demi';
+    text-align: left;
+    color: #656f79;
+    margin: 16px 0 0 0;
+    position: relative;
+    padding: 0 0 0 29px;
+    box-sizing: border-box;
+}
+.playerHistory_tarif-list li::before{
+    content: "";
+    width: 15px;
+    height: 10px;
+    background-image: url("../../assets/images/icon/check.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+.playerHistory_tarif-button{
+    width: 220px;
+    float: left;
+    font-size: 16px;
+    font-family: 'Avenir Next Cyr Demi';
+    color: #3a4257;
+    margin: 40px 0 0 0;
+    padding: 14px 0 15px 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 1px 0 rgba(39, 39, 39, 0.16);
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    background-image: linear-gradient(to bottom, #fff, #efefef);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    transition: .3s;
+}
+.playerHistory_tarif-button img{
+    width: 17.9px;
+    height: 17.8px;
+    object-position: center;
+    object-fit: contain;
+    margin: 0 0 0 0;
+    transition: .3s;
+    position: absolute;
+    right: 37px;
+    opacity: 0;
+}
+.playerHistory_tarif-button:hover{
+    padding: 14px 28px 15px 0;
+    transition: .3s;
+}
+.playerHistory_tarif-button:hover img{
+    opacity: 1;
+    transition: .3s;
+}
+/* */
+.playerCode{
+    width: 100%;
+    height: auto;
+    min-height: 90vh;
+    float: left;
+    background-color: #2b333c;
+    padding: 30px 0 60px;
+}
+.playerCode_center{
+    width: 90%;
+    max-width: 1520px;
+    height: auto;
+    margin: 0 auto;
+}
+.playerCode-text{
+    width: 100%;
+    height: auto;
+    float: left;
+    font-size: 16px;
+    font-family: 'Avenir Next Cyr Medium';
+    text-align: left;
+    color: #a5b3c6;
+    text-transform: uppercase;
+}
+.playerCode-title{
+    width: 100%;
+    height: auto;
+    float: left;
+    font-size: 32px;
+    line-height: 1.38;
+    font-family: 'Avenir Next Cyr Demi';
+    text-align: left;
+    color: #ecf0f5;
+}
+.playerCode_row{
+    width: 100%;
+    height: auto;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 43px 0 80px 0;
+}
+.playerCode_item:nth-child(1){
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.playerCode_item-sectionTitle{
+    width: 100%;
+    height: auto;
+    float: left;
+    font-size: 16px;
+    font-family: 'Avenir Next Cyr Medium';
+    text-align: left;
+    color: #858c93;
+    padding: 0 0 7px;
+    border-bottom: 1px solid #516071;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+.playerCode_item-title{
+    width: 100%;
+    height: auto;
+    float: left;
+    font-size: 32px;
+    font-family: 'Avenir Next Cyr Medium';
+    text-align: center;
+    color: #ecf0f5;
+    margin: 42px 0 0 0;
+}
+.playerCode_item-description{
+    width: 100%;
+    height: auto;
+    float: left;
+    font-size: 18px;
+    text-align: center;
+    color: #a6b5c6;
+    margin: 11px 0 0 0;
+}
+.playerCode_item-link{
+    font-size: 16px;
+    text-align: center;
+    color: #4192df;
+    margin: 22px 0 0 0;
+    text-decoration: underline;
+}
+.playerCode_item-textarea{
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    font-size: 20px;
+    text-align: left;
+    color: #c5d0de;
+    padding: 20px 42px;
+    border-radius: 20px;
+    background-color: #363d46;
+    margin: 35px 0 0 0;
+    position: relative;
+}
+.playerCode_item-textarea p{
+    width: 100%;
+    height: auto;
+    float: left;
+    font-size: 17px;
+    line-height: 1.35;
+    letter-spacing: normal;
+    text-align: left;
+    color: #c5d0de;
+}
+.playerCode_item-copy{
+    font-size: 12px;
+    font-family: 'Avenir Next Cyr Demi';
+    color: #fff;
+    position: absolute;
+    text-transform: uppercase;
+    right: 26px;
+    top: 26px;
+    cursor: pointer;
+    padding: 0 31px 0 0;
+}
+.playerCode_item-copy:after{
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 0;
+    top: -1px;
+    background-image: url('../../assets/images/icon/copy.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+@media screen and (max-width: 1250px){
+    .playerHistory_item:nth-child(1){
+        width: 65%;
+    }
+    .playerHistory_item:nth-child(2){
+        width: 30%;
+    }
+}
+@media screen and (max-width: 1000px){
+    .playerHistory_item:nth-child(1){
+        width: 100%;
+    }
+    .playerHistory_item:nth-child(2){
+        width: 100%;
+        margin: 30px 0 0 0;
+    }
+}
+@media screen and (max-width: 900px){
+    .playerCreater_item:nth-child(1){
+        width: 100%;
+    }
+    .playerCreater_item:nth-child(2){
+        width: 100%;
+        margin: 30px 0 0 0;
+    }
+}
+@media screen and (max-width: 700px){
+    .playerCode-text, .playerHistory-text, .playerCreater-text{
+        font-size: 13px;
+    }
+    .playerCreater-title, .playerCode-title, .playerHistory-title{
+        font-size: 23px;
+        margin: 5px 0 0;
+    }
+    .playerCode_row{
+        margin: 43px 0 40px 0;
+    }
+    .playerCode_item-sectionTitle{
+        font-size: 14px;
+    }
+    .playerCode_item-title{
+        font-size: 24px;
+    }
+    .playerCode_item-description {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .playerCode_item-link{
+        font-size: 14px;
+    }
+    .playerCode_item-textarea p{
+        font-size: 12px;
+    }
+    .playerCode_item-textarea {
+        font-size: 14px;
+        padding: 20px 20px;
+        margin: 35px 0 0 0;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .playerCreater-generate {
+        font-size: 14px;
+        padding: 16px 50px 17px;
+        border-radius: 11px;
+        border: none;
+    }
+    .playerCode_item-copy {
+        font-size: 11px;
+        right: 17px;
+        top: 21px;
+        padding: 0 25px 0 0;
+    }
+    .playerCode_item-copy:after{
+        width: 15px;
+        height: 15px;
+    }
+    .playerCreater_item-form-box span > img{
+        margin: 0 9px 0 0px;
+    }
+    .playerCreater_item-form-box span{
+        font-size: 13px;
+    }
+    .playerCreater_box{
+        margin: 30px 0 0 0;
+    }
+    .playerCreater_row{
+        margin: 40px 0;
+    }
+
+    .playerCreater_item-text span {
+        left: unset;
+        right: 113px;
+        top: 31px;
+    }
+    .playerCreater_item-text span:before {
+        top: -6px;
+        left: unset;
+        right: 7px;
+    }
+    .playerHistory_plan-title{
+        font-size: 16px;
+    }
+    .playerHistory_plan-description{
+        font-size: 14px;
+    }
+    .playerHistory_box{
+        flex-wrap: wrap;
+    }
+    .playerHistory_block{
+        width: 48% !important;
+        max-width: 48% !important;
+        min-width: 48% !important;
+        padding: 0 !important;
+        border: unset !important;
+        border-bottom: 1px solid #516071 !important;
+        padding: 15px 0 !important;
+    }
+    .playerHistory_block:nth-child(1){
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+        padding: 0 0 15px !important;
+    }
+    .playerHistory_block-button{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 430px){
+    .playerCreater_item-form-box{
+        width: 88%;
+    }
+    .playerCreater_box-player{
+        padding: 7px;
+    }
+    .playerCode_item-description br{
+        display: none;
+    }
+    .playerHistory_block{
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+    }
+    .playerHistory_block:nth-child(4){
+        width: 48% !important;
+        max-width: 48% !important;
+        min-width: 48% !important;
+        padding: 15px 0 0 !important;
+        border: unset !important;
+    }
+    .playerHistory_block:nth-child(5){
+        width: 48% !important;
+        max-width: 48% !important;
+        min-width: 48% !important;
+        padding: 15px 0 0 !important;
+        border: unset !important;
+        position: relative;
+    }
+    .playerHistory_block-remove{
+        position: absolute;
+        right: 0;
+        top: 20px;
+    }
+    .playerHistory_plan-button {
+        font-size: 14px;
+        margin: 35px 0 0 0;
+        padding: 12px 40px 13px;
+    }
+    .playerHistory_row{
+        margin: 40px 0;
+    }
+    .playerHistory_tarif-title{
+        font-size: 20px;
+    }
+    .playerHistory_tarif-text{
+        font-size: 14px;
+        margin: 5px 0 0 0;
+    }
+    .playerHistory_tarif-list li {
+        font-size: 14px;
+        margin: 12px 0 0 0;
+    }
+    .playerHistory_tarif-button{
+        font-size: 14px;
+        margin: 35px 0 0 0;
+        padding: 12px 40px 13px;
+    }
+}

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="53" height="51.5">
+    <defs>
+        <filter id="Rectangle_4" x="0" y="0" width="53" height="51.5" filterUnits="userSpaceOnUse">
+            <feOffset dy="4"/>
+            <feGaussianBlur stdDeviation=".5" result="blur"/>
+            <feFlood flood-color="#272727" flood-opacity=".161"/>
+            <feComposite operator="in" in2="blur"/>
+        </filter>
+        <filter id="Rectangle_4-2" x="0" y="0" width="53" height="51.5" filterUnits="userSpaceOnUse">
+            <feOffset dy="5"/>
+            <feGaussianBlur stdDeviation="1" result="blur-2"/>
+            <feFlood flood-opacity=".161" result="color"/>
+            <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+            <feComposite operator="in" in="color"/>
+            <feComposite operator="in" in2="SourceGraphic"/>
+        </filter>
+        <filter id="User" x="18.66" y="12.569" width="17.226" height="21.861" filterUnits="userSpaceOnUse">
+            <feOffset dx="1" dy="1"/>
+            <feGaussianBlur result="blur-3"/>
+            <feFlood flood-opacity=".184"/>
+            <feComposite operator="in" in2="blur-3"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-3{fill:#fff}.cls-6{fill:none}.cls-5{stroke:none}
+        </style>
+    </defs>
+    <g id="User_Icon" data-name="User Icon">
+        <g data-type="innerShadowGroup" transform="translate(-1769.766 -24)">
+            <g transform="translate(1769.77 24)" style="filter:url(#Rectangle_4)">
+                <g id="Rectangle_4-3" data-name="Rectangle 4" transform="translate(1.5)" style="stroke:#fd4e7e;stroke-width:3px;fill:#d62555">
+                    <rect class="cls-5" width="50" height="46" rx="6"/>
+                    <rect class="cls-6" x="1.5" y="1.5" width="47" height="43" rx="4.5"/>
+                </g>
+            </g>
+            <rect id="Rectangle_4-4" data-name="Rectangle 4" width="50" height="46" rx="6" transform="translate(1771.266 24)" style="fill:#d62555"/>
+            <g transform="translate(1769.77 24)" style="filter:url(#Rectangle_4-2)">
+                <rect id="Rectangle_4-5" data-name="Rectangle 4" class="cls-3" width="50" height="46" rx="6" transform="translate(1.5)"/>
+            </g>
+            <g id="Rectangle_4-6" data-name="Rectangle 4" transform="translate(1771.266 24)" style="fill:none;stroke:#fd4e7e;stroke-width:3px">
+                <rect class="cls-5" width="50" height="46" rx="6"/>
+                <rect class="cls-6" x="1.5" y="1.5" width="47" height="43" rx="4.5"/>
+            </g>
+        </g>
+        <g transform="translate(.004)" style="filter:url(#User)">
+            <path id="User-2" data-name="User" class="cls-3" d="M-4737.914-1397.707a2.773 2.773 0 0 1-2.785-2.761 5.764 5.764 0 0 1 4.884-5.679l.214-.035a19.27 19.27 0 0 1 6.03 0l.214.035a5.764 5.764 0 0 1 4.884 5.679 2.773 2.773 0 0 1-2.786 2.761zm.22-15.8a5.086 5.086 0 0 1 5.107-5.066 5.087 5.087 0 0 1 5.108 5.066 5.088 5.088 0 0 1-5.108 5.067 5.088 5.088 0 0 1-5.107-5.06z" transform="translate(4759.36 1431.14)"/>
+        </g>
+    </g>
+</svg>

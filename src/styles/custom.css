@@ -1,0 +1,119 @@
+.error-input {
+    border: 1px solid red !important;
+}
+
+.playerHistory_item_full {
+    width: 100%;
+}
+
+.app-alert {
+    max-width: 768px;
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    background: #333b45;
+    border-radius: 18px;
+    border: 2px solid red;
+    font-family: 'Avenir Next Cyr Bold';
+    font-size: 14px;
+    color: red;
+    top: 100px
+}
+
+.app-alert button {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 10px;
+}
+
+.wavepleer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.wavepleer img {
+    width: 25px;
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+.modal-wrapper,
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-overlay {
+    z-index: 2;
+}
+
+.modal-content {
+    z-index: 3;
+}
+
+.app-loader-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(43, 51, 60, 0.53);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal_pay_row-title {
+    width: -webkit-fill-available;
+    width: -moz-available;
+    height: auto;
+    float: left;
+    padding: 30px 30px;
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: left;
+    color: #c8d2e0;
+    font-family: 'Avenir Next Cyr Medium';
+}
+.CancelButtUnactiv{
+    box-shadow: 0px 5px 10px 2px rgb(101 109 118 / 20%) inset;
+    border: solid 2px #656d766b;
+    background: linear-gradient(180deg, rgb(69 79 89 / 75%) 0%, rgb(68 78 88 / 75%) 100%);
+    font-size: 14px;
+    font-family: 'Avenir Next Cyr Medium';
+    color: #dedede;
+}
+.modal_pay_row-button:hover{
+    box-shadow: 0px 5px 10px 2px rgb(255 255 255 / 32%) inset;
+}
+
+.content-page .rhap_controls-section{
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.content-page .rhap_container{
+    box-shadow: none;
+}
+
+.wrapper-button{
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.wrapper-button button {
+    width: 100%;
+}
